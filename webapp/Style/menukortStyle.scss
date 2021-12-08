@@ -1,1 +1,156 @@
 @import '_header.scss';
+
+$MainWidth: 100%;
+$MainFontSize: 20px;
+$hFontSize: 35px;
+$WidthText:700px;
+$MarginTop: 40px;
+
+body {
+    background-color: $MainWhite ;
+    font-family: $MainFont;
+    height: 2000px;
+ }
+
+ main {
+     width: $MainWidth;
+ }
+
+ .del-1 {
+     width: $MainWidth;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+ }
+
+ .drinks {
+     margin-top: 40px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column; 
+ }
+
+ .vin {
+     width: $WidthText;
+     text-align:center;
+ }
+
+ h1 {
+     font-size: $MainFontSize;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+     font-size: $hFontSize;
+     text-decoration: underline;
+ }
+
+ h2 {
+    font-size: $MainFontSize;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: $hFontSize;
+    text-decoration: underline;
+}
+
+.vand {
+    width: $WidthText;
+    text-align:center;
+    margin-top: $MarginTop;
+}
+
+h3 {
+    font-size: $MainFontSize;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: $hFontSize;
+    text-decoration: underline;
+}
+h4 {
+    font-size: $MainFontSize;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: $hFontSize;
+    text-decoration: underline;
+}
+h5 {
+    font-size: $MainFontSize;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: $hFontSize;
+    text-decoration: underline;
+}
+h6 {
+    font-size: $MainFontSize;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: $hFontSize;
+    text-decoration: underline;
+}
+
+.fadøl {
+    width: $WidthText;
+    text-align:center;
+    margin-top: $MarginTop;
+}
+
+
+ .del-2 {
+    width: $MainWidth;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.forret {
+    width: $WidthText;
+    text-align: center;
+    font-size: $hFontSize;
+    margin-top: $MarginTop;
+}
+
+p {
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: $MainFontSize;
+}
+
+.del-3 {
+    width: $MainWidth;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+}
+.hovedret {
+    width: $WidthText;
+    text-align:center;
+    margin-top: $MarginTop;
+}
+
+.del-4 {
+    width: $MainWidth;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+}
+
+.dessert {
+    width: $WidthText;
+    text-align:center;
+    margin-top: $MarginTop;
+}

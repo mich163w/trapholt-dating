@@ -1,1 +1,81 @@
 @import '_header.scss';
+@import url(_fontAndColor.scss);
+
+$MainFontSize: 30px;
+
+body {
+   background-color: $MainWhite ;
+   font-family: $MainFont;
+}
+
+.restaurant{
+    width: 100%;
+    height: 500px;
+}
+
+img {
+    width: 100%;
+    height: 500px;
+}
+
+.border {
+    color: $MainWhite;
+    border: 10px solid $MainWhite;
+    height: 100px;
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    font-size: 55px;
+    display: flex;   
+}
+
+.textbox {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    width: 990px;
+    text-align:justify;
+}
+
+.text p {
+    font-size: $MainFontSize;
+    font-family: $MainFont;
+}
+
+.semenu-box {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.se-menu {
+    border: 3px solid $MainBlack;
+    width: 250px;
+    height: 80px;
+    font-size: $MainFontSize;
+    font-family: $MainFont;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: $MainBlack;
+}
+
