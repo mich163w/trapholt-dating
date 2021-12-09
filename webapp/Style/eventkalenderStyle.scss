@@ -1,1 +1,61 @@
 @import '_header.scss';
+@import '_fontAndColor.scss';
+
+body {
+    background-color: $MainWhite;
+    font-family: $MainFont;
+}
+
+img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.borderbox {
+    border: 10px solid $MainWhite;
+    height: 100px;
+    width: 350px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 55px;
+    color: $MainWhite;
+}
+
+.outerboxevent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eventbox {
+    display: flex;
+    align-items: center;
+    background-color: $MainWhite;
+    width: 900px;
+    border-style: solid;
+    border-color: black;
+}
+
+.imgbox {
+    display: flex;
+    width: 300px;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+}
+.imgbox img {
+    display: flex;
+    width:100%;
+    height:100px;
+    padding: 7px;
+}
+
+
+
+
