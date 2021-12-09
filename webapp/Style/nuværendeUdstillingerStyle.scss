@@ -1,1 +1,39 @@
 @import '_header.scss';
+
+
+
+.udstilling {
+background-color: black;
+color: white;
+border: 2px solid black;
+margin: 20px;
+padding: 20px;
+text-align: left;
+}
+
+h1 {
+font-size: $MainFontSize;
+}
+
+p {
+font-size: $MainFontSize;
+}
+main {
+width: 100%;
+}
+.frontpagephoto {
+    width: 1200px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+width: 100%;
+object-fit: contain;
+margin: 0 auto;
+display: flex;
+
+}
+
