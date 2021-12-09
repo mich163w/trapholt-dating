@@ -2,9 +2,10 @@
 
 $MainWidth: 100%;
 $MainFontSize: 20px;
-$hFontSize: 35px;
+$FontSize: 30px;
 $WidthText:700px;
 $MarginTop: 40px;
+$TextDecoration: underline;
 
 body {
     background-color: $MainWhite ;
@@ -37,26 +38,6 @@ body {
      text-align:center;
  }
 
- h1 {
-     font-size: $MainFontSize;
-     display: flex;
-     justify-content: center;
-     flex-direction: column;
-     align-items: center;
-     font-size: $hFontSize;
-     text-decoration: underline;
- }
-
- h2 {
-    font-size: $MainFontSize;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    font-size: $hFontSize;
-    text-decoration: underline;
-}
-
 .vand {
     width: $WidthText;
     text-align:center;
@@ -64,40 +45,12 @@ body {
 }
 
 h3 {
-    font-size: $MainFontSize;
+    font-size: $FontSize;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    font-size: $hFontSize;
-    text-decoration: underline;
-}
-h4 {
-    font-size: $MainFontSize;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    font-size: $hFontSize;
-    text-decoration: underline;
-}
-h5 {
-    font-size: $MainFontSize;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    font-size: $hFontSize;
-    text-decoration: underline;
-}
-h6 {
-    font-size: $MainFontSize;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    font-size: $hFontSize;
-    text-decoration: underline;
+    text-decoration: $TextDecoration;
 }
 
 .fadøl {
@@ -118,7 +71,6 @@ h6 {
 .forret {
     width: $WidthText;
     text-align: center;
-    font-size: $hFontSize;
     margin-top: $MarginTop;
 }
 
