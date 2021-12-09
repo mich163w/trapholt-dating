@@ -3,26 +3,47 @@
 
 
 .udstilling {
-background-color: black;
-color: white;
+background-color: none;
+color: black;
 border: 2px solid black;
 margin: 20px;
 padding: 20px;
 text-align: left;
+display: flex;
+
 }
 
-h1 {
-font-size: $MainFontSize;
+h1.title {
+font-size: 30px;
+padding-left: 20px;
+margin: 30px;
 }
 
 p {
-font-size: $MainFontSize;
+font-size: 30px;
+padding-left: 20px;
+margin: 30px;
+display: center;
+align-items: center;
+justify-content: space-evenly;
+
 }
+
+p.bold {
+    font-size: 30px;
+    font-weight: bold;
+    flex-direction: left;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+
 main {
 width: 100%;
 }
+
 .frontpagephoto {
-    width: 1200px;
+    width: 100%;
     height: 600px;
     display: flex;
     align-items: center;
@@ -31,9 +52,18 @@ width: 100%;
 
 img {
 width: 100%;
-object-fit: contain;
-margin: 0 auto;
+height: 600px;
+object-fit: cover;
+margin: 0 middle;
 display: flex;
 
+}
+
+img.preview {
+height: 100px;
+width: 100px;
+object-fit: small;
+margin: none;
+padding: none;
 }
 
