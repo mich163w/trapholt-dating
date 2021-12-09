@@ -1,13 +1,14 @@
-var slideIndex = 1;
+var slideIndex = 0;
+var slides = document.getElementsByClassName("slide");
 showSlides(slideIndex);
 
 function currentSlide(n) {
     showSlides(slideIndex = n);
+
 }
 
 function showSlides(n) {
     var i;
-    var slides = document.getElementsByClassName("slide");
     var circleNavs = document.getElementsByClassName("circleNav");
     if (n > slides.length) {slideIndex = 1}
     if (n < 1) {slideIndex = slides.length}
@@ -21,21 +22,10 @@ function showSlides(n) {
     circleNavs[slideIndex-1].className += " circleSelect";
 }
 
-/*JS til modal box / form popup*/
-var modal = document.getElementById("modalBox");
-var btn = document.getElementsByClassName("callToAction");
-
-
-function clickMe() {
-    modal.style.display = "block";
-}
-
-function closeMe() {
-    modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+setInterval( function() {
+    if (slideIndex === slides.length) {
+        slideIndex = 0;
     }
-}
+    slideIndex += 1;
+    showSlides();
+}, 5000)
