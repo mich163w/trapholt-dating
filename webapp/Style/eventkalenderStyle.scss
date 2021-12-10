@@ -10,6 +10,7 @@ img {
     width: 100%;
     height: 500px;
     object-fit: cover;
+    padding-bottom: 70px;
 }
 
 .borderbox {
@@ -31,6 +32,8 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px;
+    
 }
 
 .eventbox {
@@ -39,16 +42,22 @@ img {
     background-color: $MainWhite;
     width: 900px;
     border-style: solid;
-    border-color: black;
+    border-color: $MainBlack;
+    border-radius: 5px;
+    border-width: 1px;
+
 }
 
 .imgbox {
     display: flex;
-    width: 300px;
+    width: 150px;
     height: 120px;
     align-items: center;
     justify-content: center;
+    padding: 10px;
+
 }
+
 .imgbox img {
     display: flex;
     width:100%;
@@ -56,6 +65,54 @@ img {
     padding: 7px;
 }
 
+.midbox {
+width: 600px;
+height: 100px;
+}
+
+.midbox1 {
+    font-size: 18px;
+}
+
+.midstreg {
+    width: 300px;
+    height: 1px;
+    background-color: grey;
+    border-radius: 25px;
+    margin-bottom: 3px;
+}
+
+.midbox2 {
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+.midbox3 {
+    font-size: 14px;
+}
+
+.rightbox {
+    width: 130px;
+    height: 120px;
+    padding: 20px 15px 20px 15px;
+
+}
+
+.rightboxtop {
+    width: 100px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.rightboxbottom {
+    width: 100px;
+    height: 30px;
+}
 
 
+/* MEDIA QUERIES 
+
+@media screen and (max-width: 700px) {
+
+} */
 
