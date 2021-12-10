@@ -147,6 +147,17 @@ main {
   display: -ms-flexbox;
   display: flex;
   text-align: justify;
+  margin-top: 20px;
+}
+
+.billedtekst .bold {
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: justify;
   margin-top: 10px;
 }
 
