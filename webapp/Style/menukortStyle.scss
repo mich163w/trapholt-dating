@@ -23,6 +23,12 @@ body {
      justify-content: center;
      align-items: center;
      flex-direction: column;
+     background-image:url("../img/317-541103_2.png");
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size:contain;
+     position: relative;
+     
  }
 
  .drinks {
@@ -31,17 +37,24 @@ body {
      justify-content: center;
      align-items: center;
      flex-direction: column; 
+     width: 100%;
+     height: 655px;
+    
+    
  }
 
  .vin {
      width: $WidthText;
      text-align:center;
+     
+     
  }
 
 .vand {
     width: $WidthText;
     text-align:center;
     margin-top: $MarginTop;
+   
 }
 
 h3 {
@@ -51,12 +64,14 @@ h3 {
     flex-direction: column;
     align-items: center;
     text-decoration: $TextDecoration;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 }
 
 .fadøl {
     width: $WidthText;
     text-align:center;
     margin-top: $MarginTop;
+   
 }
 
 
@@ -66,18 +81,28 @@ h3 {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    background-image:url("../img/creme-ninon-aertesuppe-med-bobler_676.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+    position: relative;
 }
+
 
 .forret {
     width: $WidthText;
     text-align: center;
     margin-top: $MarginTop;
+    width: 100%;
+    height: 500px;
 }
 
 p {
     display: flex;
     flex-direction: column-reverse;
     font-size: $MainFontSize;
+  
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 }
 
 .del-3 {
@@ -86,23 +111,41 @@ p {
      justify-content: center;
      align-items: center;
      flex-direction: column;
+     background-image:url("../img/pasta-med-svampe-og-kylling_4426.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+    position: relative;
+    
 }
 .hovedret {
     width: $WidthText;
     text-align:center;
     margin-top: $MarginTop;
+    width: 100%;
+    height: 500px;
+    
 }
 
 .del-4 {
-    width: $MainWidth;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-direction: column;
-}
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image:url("../img/profiteroles-med-aeblemos-og-syrligt-skum_10140.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+    position: relative;
+    }
 
 .dessert {
     width: $WidthText;
     text-align:center;
     margin-top: $MarginTop;
+    width: 100%;
+    height: 500px;
+    
 }
+
