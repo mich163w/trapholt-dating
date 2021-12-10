@@ -28,4 +28,4 @@ setInterval( function() {
     }
     slideIndex += 1;
     showSlides();
-}, 5000)
+}, 7500)

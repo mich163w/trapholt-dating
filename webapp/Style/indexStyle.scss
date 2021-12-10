@@ -15,7 +15,8 @@
         border-radius: 3px;
         box-sizing: border-box;
         background-color: #fff;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
+        position: relative;
 
         .slide {
             display: none;
@@ -29,45 +30,161 @@
                 width: 100%;
                 object-fit: contain;
             }
-            .slideContent {
-                width: 60%;
-                height: 400px;
-                margin-top: 50px;
-                display: flex;
-                flex-direction: column;
-                gap: 50px;
+            
+            h2 {
+                position: absolute;
+                left: 35px;
+                bottom: 70px;
                 font-family: $MainFont;
+                font-size: 56px;
+                color: $MainWhite;
+                text-shadow: -1px -1px 0 $MainBlack, 1px -1px 0 $MainBlack, -1px 1px 0 $MainBlack, 1px 1px 0 $MainBlack;
             }
+
+            h3 {
+                position: absolute;
+                left: 35px;
+                bottom: 30px;
+                font-family: $MainFont;
+                font-size: 30px;
+                color: $MainWhite;
+                text-shadow: -1px -1px 0 $MainBlack, 1px -1px 0 $MainBlack, -1px 1px 0 $MainBlack, 1px 1px 0 $MainBlack;
+            }
+        }
+    }
+
+    .slideNavBox {
+        width: 100%;
+        height: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    
+        .circleNav {
+            width: 10px;
+            height: 10px;
+            border: 2px solid $MainBlack;
+            border-radius: 10px;
+            transition: all 250ms ease-out;
+            cursor: pointer;
+        }
+
+        .circleNav:hover {
+            background-color: $MainBlack;
+        }
+
+        .circleSelect {
+            background-color: $MainBlack;
         }
     }
 }
 
-
-
-
-
-.welcomeSlider .slideNavBox {
-    width: 100%;
-    height: 5%;
+.eventCalender {
+    width:100%;
     display: flex;
     align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    padding-bottom: 50px;
+    
+    .eventTitle {
+        font-family: $MainFont;
+        font-size: 40px;
+        
+    }
+
+    .eventBanner {
+        width: 80%;
+        height: 175px;
+        border: 1px solid $MainBlack;
+        display: flex;
+        align-items: center;
+        font-family: $MainFont;
+        font-size: 24px;
+        border-radius: 2px;
+
+        h2{
+            font-weight: 400;
+        }
+
+        img {
+            width: 15%;
+            height: 85%;
+            margin: 0 4% 0 1%;
+            object-fit: cover;
+            border-radius: 2px;
+        }
+
+        .bannerName {
+            width: 30%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .bannerDate {
+            width: 35%;
+            display: flex;
+        }
+    }
+}
+
+.infoSection {
+    width: 100%;
+    display: flex;
     justify-content: center;
-    gap: 15px;
+    font-family: $MainFont;
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+    h2{
+        font-size: 30px;
+        font-weight: 400;
+    }
+    a {
+        color: $MainBlack;
+        font-size: 30px;
+        font-weight: 400;
+        text-decoration-thickness: 7%;
+    }
+
+    .infoTitle {
+        font-weight: 600;
+    }
+    
+    .adress {
+        width: 20%;
+    }
+
+    .contact {
+        width: 28%;
+    }
+
+    .openingHours {
+        width: 24%;
+    }
+
+    .socials {
+        display: flex;
+        flex-direction: column;       
+    }
 }
 
-.welcomeSlider .slideNavBox .circleNav {
-    width: 10px;
-    height: 10px;
-    border: 2px solid $MainBlack;
-    border-radius: 10px;
-    transition: all 250ms ease-out;
-    cursor: pointer;
-}
+footer {
+    display: flex;
+    height: 150px;
 
-.welcomeSlider .slideNavBox .circleNav:hover {
-    background-color: $MainBlack;
-}
+    .socialsFooter{
+        width: 20%;
+        margin-left:10%;
+        display: flex;
+        align-items: center;
+        gap: 40px;
 
-.welcomeSlider .slideNavBox .circleSelect {
-    background-color: $MainBlack;
+        a {
+            color: $MainBlack;
+            text-decoration: none;
+        }
+    }
 }

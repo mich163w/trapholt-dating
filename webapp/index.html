@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="Style/indexStyle.css">
     <title>Trapholt</title>
 </head>
+
 <body>
     <header>
         <div class="logoBox">
@@ -43,33 +46,190 @@
     </header>
 
     <section class="welcomeSlider">
-            <div class="sliderContainer">
-                <div class="slide">
-                    <img src="img/index-slide-VernerPanton.jpg" alt="Verner Panton">
-                </div>
-                <div class="slide">
-                    <img src="img/index-slide-NyMenu.jpg" alt="nyMenu">
-                </div>
-                <div class="slide">
-                   <img src="img/index-slide-Vinsmagning.jpg" alt="Vinsmagning">
-                </div>
+        <div class="sliderContainer">
+            <div class="slide">
+                <img src="img/index-slide-VernerPanton.jpg" alt="Verner Panton">
+                <h2>
+                    Verner Panton
+                </h2>
+                <h3>
+                    Farver en ny verden
+                </h3>
             </div>
-            <div class="slideNavBox">
-                <div class="circleNav" onclick="currentSlide(1)"></div>
-                <div class="circleNav" onclick="currentSlide(2)"></div>
-                <div class="circleNav" onclick="currentSlide(3)"></div>
+            <div class="slide">
+                <img src="img/index-slide-NyMenu.jpg" alt="nyMenu">
+                <h2>
+                    Ny menu
+                </h2>
+                <h3>
+                    Vores restaurant har nye specialiteter
+                </h3>
             </div>
+            <div class="slide">
+                <img src="img/index-slide-Vinsmagning.jpg" alt="Vinsmagning">
+                <h2>
+                    Vinsmagning
+                </h2>
+                <h3>
+                    Afslut jeres besøg med en hyggelig og intim aften
+                </h3>
+            </div>
+        </div>
+        <div class="slideNavBox">
+            <div class="circleNav" onclick="currentSlide(1)"></div>
+            <div class="circleNav" onclick="currentSlide(2)"></div>
+            <div class="circleNav" onclick="currentSlide(3)"></div>
+        </div>
     </section>
     <section class="eventCalender">
-        <h2>Eventkalender</h2>
+        <h2 class="eventTitle">Eventkalender</h2>
         <div class="eventBanner">
-            <img src="#" alt="">
+            <img src="img/vernerpanton.png" alt="">
+            <div class="bannerName">
+                <h2>
+                    Verner Panton
+                </h2>
+            </div>
+            <div class="bannerDate">
+                <h2>
+                    12. januar - 1. februar
+                </h2>
+            </div>
+            <div class="bannerYear">
+                <h2>
+                    2022
+                </h2>
+            </div>
+        </div>
+        <div class="eventBanner">
+            <img src="img/eventvinsmagning.png" alt="">
+            <div class="bannerName">
+                <h2>
+                    Vinsmagning
+                </h2>
+            </div>
+            <div class="bannerDate">
+                <h2>
+                    11. marts - 18. marts
+                </h2>
+            </div>
+            <div class="bannerYear">
+                <h2>
+                    2022
+                </h2>
+            </div>
+        </div>
+        <div class="eventBanner">
+            <img src="img/event-MiddagFor2.png" alt="">
+            <div class="bannerName">
+                <h2>
+                    Middag for to
+                </h2>
+            </div>
+            <div class="bannerDate">
+                <h2>
+                    24. april - 6. maj
+                </h2>
+            </div>
+            <div class="bannerYear">
+                <h2>
+                    2022
+                </h2>
+            </div>
         </div>
     </section>
     <section class="infoSection">
-
+        <div class="adress">
+            <h2 class="infoTitle">
+                Adresse
+            </h2>
+            <br>
+            <h2>
+                Trapholt
+            </h2>
+            <h2>
+                Æblehaven 23
+            </h2>
+            <h2>
+                6000 Kolding
+            </h2>
+            <a href="https://goo.gl/maps/zz8ngRUsjMFEfrm17" target="_blank">
+                Find os
+            </a>
+        </div>
+        <div class="contact">
+            <h2 class="infoTitle">
+                Telefon
+            </h2>
+            <h2>
+                +45 76 30 05 30
+            </h2>
+            <br>
+            <h2 class="infoTitle">
+                E-mail
+            </h2>
+            <h2>
+                kunstmuseum@trapholt.dk
+            </h2>
+        </div>
+        <div class="openingHours">
+            <h2 class="infoTitle">
+                Åbningstider
+            </h2>
+            <h2>
+                Tirsdag - Søndag
+            </h2>
+            <h2>
+                10:00 - 17:00
+            </h2>
+            <h2>
+                Onsdag
+            </h2>
+            <h2>
+                10:00 - 21:00
+            </h2>
+            <h2>
+                Mandag: Lukket
+            </h2>
+        </div>
+        <div class="socials">
+            <h2 class="infoTitle">
+                Følg os
+            </h2>
+            <a href="https://www.facebook.com/trapholt.dk/" target="_blank">
+                Facebook
+            </a>
+            <a href="https://www.instagram.com/trapholt/" target="_blank">
+                Instagram
+            </a>
+            <a href="https://www.linkedin.com/company/trapholt/" target="_blank">
+                LinkedIn
+            </a>
+            <a href="https://www.tripadvisor.dk/Profile/Trapholt" target="_blank">
+                Tripadvisor
+            </a>
+            <a href="https://www.youtube.com/channel/UCQfgiSZYdyAyGkk9Hu85p9g?view_as=subscriber" target="_blank">
+                Youtube
+            </a>
+        </div>
     </section>
-
+    <footer>
+        <div class="socialsFooter">
+            <a href="https://www.facebook.com/trapholt.dk/" target="_blank">
+                <i class="icon-facebook icon-3x"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/trapholt/" target="_blank">
+                <i class="icon-linkedin icon-3x"></i>
+            </a>
+            <a href="https://www.instagram.com/trapholt/" target="_blank">
+                <i class="icon-instagram icon-3x"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCQfgiSZYdyAyGkk9Hu85p9g?view_as=subscriber" target="_blank">
+                <i class="icon-youtube icon-3x"></i>
+            </a>
+        </div>
+    </footer>
     <script src="Javascript/sliderJS.js"></script>
 </body>
+
 </html>

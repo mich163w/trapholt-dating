@@ -107,7 +107,8 @@ header .navBox nav ul li a h2 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  position: relative;
 }
 
 .welcomeSlider .sliderContainer .slide {
@@ -132,19 +133,24 @@ header .navBox nav ul li a h2 {
      object-fit: contain;
 }
 
-.welcomeSlider .sliderContainer .slide .slideContent {
-  width: 60%;
-  height: 400px;
-  margin-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 50px;
+.welcomeSlider .sliderContainer .slide h2 {
+  position: absolute;
+  left: 35px;
+  bottom: 70px;
   font-family: "Roboto", sans-serif;
+  font-size: 56px;
+  color: #fff;
+  text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+}
+
+.welcomeSlider .sliderContainer .slide h3 {
+  position: absolute;
+  left: 35px;
+  bottom: 30px;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  color: #fff;
+  text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
 }
 
 .welcomeSlider .slideNavBox {
@@ -178,5 +184,149 @@ header .navBox nav ul li a h2 {
 
 .welcomeSlider .slideNavBox .circleSelect {
   background-color: #000000;
+}
+
+.eventCalender {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+  padding-bottom: 50px;
+}
+
+.eventCalender .eventTitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+}
+
+.eventCalender .eventBanner {
+  width: 80%;
+  height: 175px;
+  border: 1px solid #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  border-radius: 2px;
+}
+
+.eventCalender .eventBanner h2 {
+  font-weight: 400;
+}
+
+.eventCalender .eventBanner img {
+  width: 15%;
+  height: 85%;
+  margin: 0 4% 0 1%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 2px;
+}
+
+.eventCalender .eventBanner .bannerName {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.eventCalender .eventBanner .bannerDate {
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.infoSection {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Roboto", sans-serif;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.infoSection h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.infoSection a {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 400;
+  text-decoration-thickness: 7%;
+}
+
+.infoSection .infoTitle {
+  font-weight: 600;
+}
+
+.infoSection .adress {
+  width: 20%;
+}
+
+.infoSection .contact {
+  width: 28%;
+}
+
+.infoSection .openingHours {
+  width: 24%;
+}
+
+.infoSection .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 150px;
+}
+
+footer .socialsFooter {
+  width: 20%;
+  margin-left: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+
+footer .socialsFooter a {
+  color: #000000;
+  text-decoration: none;
 }
 /*# sourceMappingURL=indexStyle.css.map */
