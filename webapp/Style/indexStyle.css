@@ -329,4 +329,39 @@ footer .socialsFooter a {
   color: #000000;
   text-decoration: none;
 }
+
+@media screen and (max-width: 700px) {
+  .welcomeSlider .sliderContainer {
+    height: 400px;
+  }
+  .welcomeSlider .sliderContainer .slide h2 {
+    bottom: 60px;
+    font-size: 48px;
+  }
+  .welcomeSlider .sliderContainer .slide h3 {
+    font-size: 24px;
+  }
+  .welcomeSlider .slideNavBox .circleNav:hover {
+    color: none;
+  }
+  .eventCalender .eventBanner {
+    height: 100px;
+    font-size: 12px;
+  }
+  .eventCalender .eventBanner .bannerName {
+    width: 25%;
+  }
+  .infoSection h2 {
+    font-size: 16px;
+  }
+  .infoSection a {
+    font-size: 14px;
+  }
+  .infoSection .adress {
+    width: 17%;
+  }
+  .infoSection .contact {
+    width: 31%;
+  }
+}
 /*# sourceMappingURL=indexStyle.css.map */

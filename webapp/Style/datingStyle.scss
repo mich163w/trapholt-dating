@@ -1,1 +1,187 @@
-@import '_header.scss';
+@import "_header.scss";
+
+.topPicture {
+    width: 100%;
+    height: 500px;
+
+    img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        object-position: 0 -150px;
+    }
+
+    .border {
+        color: $MainWhite;
+        border: 10px solid $MainWhite;
+        height: 100px;
+        width: 350px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            font-size: 55px;
+            display: flex;
+            font-family: $MainFont;
+        }
+    }
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 75px;
+
+    .topText {
+        width: 80%;
+        font-family: $MainFont;
+
+        h2 {
+            font-size: 50px;
+            font-weight: 400;
+        }
+    }
+
+    .reviews {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 25px;
+        margin-bottom: 25px;
+
+        .reviewTitle {
+            width: 80%;
+            margin: 50px;
+            font-family: $MainFont;
+            font-size: 46px;
+        }
+
+        .reviewContainer {
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            font-family: $MainFont;
+            height: 600px;
+
+            .userReview {
+                width: 28%;
+                border: 1px solid $MainBlack;
+                border-radius: 2px;
+                padding-top: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                padding-bottom: 20px;
+
+                .reviewTop{
+                    display: flex;
+                    width: 90%;
+                    gap: 10px;
+
+                    i {
+                        margin-top: 3px;
+                    }
+
+                    h2 {
+                        font-size: 30px;
+
+                        span {
+                            font-weight: 400;
+                        }
+                    }
+                }
+
+                .reviewText {
+                    width: 70%;
+
+                    h2 {
+                        font-size: 26px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+
+    .endText {
+        font-family: $MainFont;
+        width: 80%;
+        margin-bottom: 50px;
+        
+        h2 {
+            font-size: 36px;
+            font-weight: 400;
+
+            a {
+                color: $MainBlack;
+            }
+        }
+    }
+}
+@media screen and (max-width: 700px) {
+    .topPicture {
+        height: 350px;
+
+        .img {
+            height: 350px;
+        }
+        .border {
+            top: 260px;;
+        }
+    }
+    
+    main {
+
+        .topText {
+            
+            h2 {
+                font-size: 24px;
+            }
+        }
+
+        .reviews {
+            margin: 20px 0;
+
+            .reviewTitle {
+                font-size: 24px;
+            }
+
+            .reviewContainer {
+                flex-direction: column;
+                gap: 20px;
+                height: auto;
+
+                .userReview {
+                    width: 100%;
+
+                    .reviewTop {
+                        h2 {
+                            font-size: 24px;
+                            margin-top: 15px;
+                        }
+                    }
+
+                    .reviewText {
+                        h2 {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .endText {
+            h2 {
+                font-size: 24px;
+            }
+        }
+    }
+}
