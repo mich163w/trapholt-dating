@@ -1,69 +1,211 @@
 @import '_header.scss';
 
 
-
-.udstilling {
-background-color: none;
-color: black;
-border: 2px solid black;
-margin: 20px;
-padding: 20px;
-text-align: left;
-display: flex;
-
-}
-
-h1.title {
-font-size: 30px;
-padding-left: 20px;
-margin: 30px;
-}
-
-p {
-font-size: 30px;
-padding-left: 20px;
-margin: 30px;
-display: center;
-align-items: center;
-justify-content: space-evenly;
-
-}
-
-p.bold {
-    font-size: 30px;
-    font-weight: bold;
-    flex-direction: left;
-    margin-top: 20px;
-    padding: 20px;
-}
-
-
 main {
-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .frontpagephoto {
     width: 100%;
     height: 600px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    margin: none;
+    padding: none;
 }
 
 img {
-width: 100%;
+width: 80%;
 height: 600px;
 object-fit: cover;
-margin: 0 middle;
-display: flex;
+}
+
+.firsttext {
+    width: 80%;
+    margin: 40px 0 10px;
+
+    p {
+        padding: 0;
+        margin: 0;
+
+    }
+
+        .bold {
+            margin-bottom: 20px;
+        }
+}
+
+.bold {
+    font-family: $MainFont;
+    font-size: 20px;
+    font-weight: 600;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
 }
+
+    .bodytext {
+        width: 100%;
+        font-family: $MainFont;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+div {
+    display: block;
+}
+
+.currenteventstitle {
+    font-weight: 600;
+    font-size: 40px;
+}
+
+
+.currentevents {
+background-color: none;
+color: black;
+border: 0.5px solid black;
+margin: 20px;
+padding: 20px;
+text-align: right;
+justify-content: space-between;
+display: flex;
+width: 80%;
+}
+
+h1.title {
+font-family: $MainFont;
+font-size: 34px;
+font-weight: 400;
+padding-left: 20px;
+margin: 40px;
+text-align: justify;
+
+}
+
+p {
+font-family: $MainFont;
+font-size: 34px;
+padding: 20px;
+margin: 20px;
+display: flex;
+text-align: justify;
+justify-content: space-evenly;
+}
+
 
 img.preview {
-height: 100px;
-width: 100px;
+height: 125px;
+width: 15%;
 object-fit: small;
 margin: none;
-padding: none;
+border-radius: 2px;
 }
 
+@media screen and (max-width: 700px) {
+
+.main {
+    background-color: none; 
+    justify-content: center;
+}
+.frontpagephoto {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60%;
+    padding: none;
+}
+
+img {
+    width: 90%;
+    height: 500px;
+    object-fit: cover;
+    }
+    
+    .firsttext {
+        width: 90%;
+        margin: 10px 0 10px;
+
+    
+        p {
+            padding: 0;
+            margin: 0;
+    
+        }
+    
+            .bold {
+                margin-bottom: 10px;
+            }
+    }
+
+    .bold {
+        width: 100%;
+        font-family: $MainFont;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .bodytext {
+        width: 100%;
+        font-family: $MainFont;
+        font-size: 15px;
+        display: flex;
+    }
+
+div {
+    display: block;
+}
+
+.currenteventstitle {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.currentevents {
+background-color: none;
+color: black;
+border: 0.5px solid black;
+margin: 5px;
+padding: 5px;
+text-align: left;
+display: flex;
+width: 90%;
+}
+
+h1.title {
+font-family: $MainFont;
+font-size: 15px;
+font-weight: 400;
+padding: none;
+margin: 30px;
+text-align: left;
+
+}
+
+p {
+font-family: $MainFont;
+font-size: 15px;
+padding: 10px;
+margin: 20px;
+display: flex;
+text-align: space-between;
+}
+
+
+img.preview {
+height: 80px;
+width: 20%;
+object-fit:cover;
+margin: 5px;
+border-radius: 2px;
+} 
+
+}
