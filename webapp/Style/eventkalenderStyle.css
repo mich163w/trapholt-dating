@@ -213,9 +213,37 @@ img {
   height: 30px;
 }
 
-/* MEDIA QUERIES 
-
+/* MEDIA QUERIES */
 @media screen and (max-width: 700px) {
-
-} */
+  img {
+    padding-bottom: 30px;
+  }
+  .eventbox {
+    width: 650px;
+    height: 170px;
+  }
+  .imgbox {
+    width: 105px;
+    height: 120px;
+  }
+  .imgbox img {
+    height: 120px;
+  }
+  .midbox {
+    width: 410px;
+    height: 120px;
+  }
+  .rightbox {
+    width: 130px;
+    height: 120px;
+  }
+  .rightboxtop {
+    width: 100px;
+    height: 30px;
+  }
+  .rightboxbottom {
+    width: 100px;
+    height: 30px;
+  }
+}
 /*# sourceMappingURL=eventkalenderStyle.css.map */
