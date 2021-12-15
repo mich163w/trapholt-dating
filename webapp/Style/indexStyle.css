@@ -6,6 +6,10 @@
           box-sizing: border-box;
 }
 
+#closer {
+  display: none;
+}
+
 header {
   width: 100%;
   height: 100px;
@@ -16,6 +20,10 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+header .burgerBox {
+  display: none;
 }
 
 header .logoBox {
@@ -80,6 +88,85 @@ header .navBox nav ul li a h2 {
   font-size: 30px;
   font-weight: 400;
   padding: 20px;
+}
+
+header .navBox nav ul li .dropdownContent {
+  position: absolute;
+  z-index: 1;
+  display: none;
+  top: 100px;
+}
+
+header .navBox nav ul li .dropdownContent a {
+  font-family: "Roboto", sans-serif;
+  padding: 20px;
+  background-color: #fff;
+  border: 2px solid #000000;
+  color: #000000;
+}
+
+header .navBox nav ul .dropDown:hover .dropdownContent {
+  display: block;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 150px;
+}
+
+footer .socialsFooter {
+  width: 20%;
+  margin-left: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+
+footer .socialsFooter a {
+  color: #000000;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 700px) {
+  header .burgerBox {
+    display: block;
+  }
+  header .burgerBox #myLinks {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    border: 2px solid #000000;
+    right: 0;
+    top: 90px;
+    font-family: "Roboto", sans-serif;
+    background: #fff;
+  }
+  header .burgerBox a {
+    color: #000000;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  header .burgerBox a.icon {
+    background: #fff;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 10px;
+  }
+  header .logoBox {
+    width: auto;
+  }
+  header .navBox {
+    display: none;
+  }
 }
 
 .welcomeSlider {
@@ -304,30 +391,6 @@ header .navBox nav ul li a h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 150px;
-}
-
-footer .socialsFooter {
-  width: 20%;
-  margin-left: 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 40px;
-}
-
-footer .socialsFooter a {
-  color: #000000;
-  text-decoration: none;
 }
 
 @media screen and (max-width: 700px) {

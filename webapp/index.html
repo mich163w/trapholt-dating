@@ -12,18 +12,34 @@
 
 <body>
     <header>
+        <div class="burgerBox">
+            <div id="myLinks">
+                <a href="Subpages/udstilling.html">Udstilling</a>
+                <a href="Subpages/nuværendeUdstillinger.html">Nuværende Udstilling</a>
+                <a href="Subpages/restaurant.html">Restaurant</a>
+                <a href="Subpages/eventkalender.html">Eventkalender</a>
+                <a href="Subpages/dating.html">Dating</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="icon-reorder icon-3x"></i>
+            </a>
+        </div>
+        </div>
         <div class="logoBox">
             <a href="index.html" class="logo">
-                <h2>LogoPlaceholder</h2>
+                <img src="img/logo/Trapholt_orinal_logo.png" alt="Logo">
             </a>
         </div>
         <div class="navBox">
             <nav>
                 <ul>
-                    <li>
+                    <li class="dropDown">
                         <a href="Subpages/udstilling.html">
                             <h2>Udstilling</h2>
                         </a>
+                        <div class="dropdownContent">
+                            <a href="Subpages/nuværendeUdstillinger.html">Nuværende Udstillinger</a>
+                        </div>
                     </li>
                     <li>
                         <a href="Subpages/restaurant.html">
@@ -231,6 +247,7 @@
     </footer>
 
     <script src="Javascript/sliderJS.js"></script>
+    <script src="Javascript/burgerMenuJS.js"></script>
 </body>
 
 </html>
