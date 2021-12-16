@@ -22,7 +22,7 @@ header {
     }
 
     .logoBox {
-        width: 20%;
+        width: 16%;
         height: 100px;
         display: flex;
         justify-content: flex-start;
@@ -33,11 +33,16 @@ header {
             display: flex;
             justify-content: center;
             align-content: center;
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
         }
     }
 
     .navBox {
-        width: 60%;
+        width: 64%;
 
         nav {
             width: 100%;
@@ -46,8 +51,9 @@ header {
                 display: flex;
                 list-style: none;
                 height: 100px;
-                justify-content: space-between;
+                justify-content: flex-end;
                 align-items: center;
+                gap: 50px;
 
                 li {
                     width: auto;
@@ -63,13 +69,34 @@ header {
                             font-weight: 400;
                             padding: 20px;
                         }
+
+                        display: inline-block;
+                        position: relative;
+
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            width: 80%;
+                            height: 2px;
+                            bottom: 15px;
+                            left: 10%;
+                            background-color: $MainBlack;
+                            opacity: 0;
+                            transition: opacity 0.25s, transform 0.25s;
+                        }
+                        &:hover::after, &:focus::after {
+                            opacity: 1;
+                            transform: translate3d(0, 5px, 0);
+                        }
                     }
 
                     .dropdownContent {
                         position: absolute;
                         z-index: 1;
-                        display: none;
-                        top: 100px;
+                        visibility: hidden;
+                        opacity: 0;
+                        top: 70px;
+                        transition: visibility 0s, opacity 0.25s linear, transform 0.25s;
 
                         a {
                             font-family: $MainFont;
@@ -77,12 +104,31 @@ header {
                             background-color: $MainWhite;
                             border: 2px solid $MainBlack;
                             color: $MainBlack;
+                            overflow: hidden;
+
+                            &::after {
+                                content: " ";
+                                opacity: 0;
+                                overflow: hidden;
+                                transform: scale(0);
+                                transform-origin: left;
+                            }
+                            &:hover::after, &:focus::after {
+                                opacity: 1;
+                                transform: scale(1);
+                            }
                         }
                     }
                 }
                 .dropDown {
                     &:hover .dropdownContent {
-                        display: block;
+                        visibility: visible;
+                        opacity: 1;
+                        transform: translate3d(0, 5px, 0)
+                    }
+
+                    a:after {
+                        content: none;
                     }
                 }
             }
@@ -94,9 +140,9 @@ footer {
     display: flex;
     height: 150px;
 
-    .socialsFooter{
+    .socialsFooter {
         width: 20%;
-        margin-left:10%;
+        margin-left: 10%;
         display: flex;
         align-items: center;
         gap: 40px;

@@ -16,14 +16,12 @@ main {
     width: 100%;
     display: flex;
     justify-content: center;
-   
 
     img {
         width: 80%;
         height: 600px;
         object-fit: cover;
     }
-
 }
 
 .billedtekst {
@@ -55,7 +53,7 @@ main {
 }
 
 .tidligere-udstillinger {
-    font-size: 25px;
+    font-size: 32px;
     font-weight: bold;
     display: flex;
     justify-content: flex-start;
