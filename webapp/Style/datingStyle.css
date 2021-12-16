@@ -191,6 +191,24 @@ footer .socialsFooter a {
   text-decoration: none;
 }
 
+footer .showOff {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .showOff img {
+  height: 100px;
+}
+
 @media screen and (max-width: 700px) {
   header .burgerBox {
     display: block;
@@ -224,6 +242,20 @@ footer .socialsFooter a {
   }
   header .navBox {
     display: none;
+  }
+  footer {
+    height: 175px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .socialsFooter {
+    margin-left: -10%;
   }
 }
 

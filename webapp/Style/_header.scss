@@ -136,6 +136,7 @@ header {
     }
 }
 
+
 footer {
     display: flex;
     height: 150px;
@@ -150,6 +151,18 @@ footer {
         a {
             color: $MainBlack;
             text-decoration: none;
+        }
+    }
+    .showOff {
+        width: 40%;
+        display: flex;
+        gap: 5%;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            height: 100px;
+
         }
     }
 }
@@ -193,6 +206,17 @@ footer {
 
         .navBox {
             display: none;
+        }
+    }
+
+    footer {
+        height: 175px;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+
+        .socialsFooter {
+            margin-left: -10%;
         }
     }
 }
